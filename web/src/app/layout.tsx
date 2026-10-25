@@ -15,8 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Project Management Board",
-  description:
-    "Book-guided demo: React Projects Ch.3 (Roy Derks) — drag-and-drop kanban board",
+  description: "Drag-and-drop kanban project management board",
 };
 
 export default function RootLayout({

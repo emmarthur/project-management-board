@@ -4,6 +4,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import Board from "@/pages/Board/Board";
 import Header from "@/components/Header/Header";
 import Backlog from "@/pages/Backlog/Backlog";
+import Help from "@/components/Help/Help";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -20,7 +21,6 @@ const AppWrapper = styled.div`
   text-align: center;
 `;
 
-/** Root shell: header + kanban board + backlog (mirrors book page layout). */
 export default function ProjectManagementBoardApp() {
   return (
     <>
@@ -29,6 +29,7 @@ export default function ProjectManagementBoardApp() {
         <Header />
         <Board />
         <Backlog />
+        <Help />
       </AppWrapper>
     </>
   );
