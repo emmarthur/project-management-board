@@ -1,27 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --pm-font: "DM Sans", system-ui, sans-serif;
+  --pm-display: "Outfit", var(--pm-font);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  margin: 0;
+  font-family: var(--pm-font);
+  color: #f1f5f9;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0f172a 0%, #1e1b4b 40%, #312e81 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
 }

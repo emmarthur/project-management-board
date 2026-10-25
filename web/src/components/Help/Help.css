@@ -1,27 +1,38 @@
 .Help-wrapper {
+  position: relative;
+  z-index: 1;
   max-width: 42rem;
-  margin: 3rem auto 4rem;
-  padding: 0 1rem;
+  margin: 2rem auto 4rem;
+  padding: 1.5rem 1.25rem;
   text-align: left;
-  color: #334155;
+  color: #cbd5e1;
   font-size: 0.9375rem;
   line-height: 1.6;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .Help-wrapper h2 {
+  font-family: "Outfit", "DM Sans", system-ui, sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 1rem;
-  border-top: 1px solid #e2e8f0;
-  padding-top: 2rem;
+  color: #f8fafc;
+  margin: 0 0 1rem;
+  padding-top: 0;
+  border-top: none;
 }
 
 .Help-wrapper h3 {
   font-size: 1rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #e2e8f0;
   margin: 1.25rem 0 0.5rem;
+}
+
+.Help-wrapper strong {
+  color: #a5b4fc;
 }
 
 .Help-wrapper ul {
