@@ -1,4 +1,5 @@
 import "./Header.css";
+import { HelpJumpButton } from "@/components/HelpJumpButton";
 
 function Header() {
   return (
@@ -10,6 +11,7 @@ function Header() {
       <p className="Header-tagline">
         Drag tasks between lanes — backlog to done
       </p>
+      <HelpJumpButton />
     </div>
   );
 }
